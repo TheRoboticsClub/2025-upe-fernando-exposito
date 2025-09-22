@@ -86,6 +86,8 @@
         <button onclick="showEntry(12)">Week 12</button>
         <button onclick="showEntry(13)">Week 13</button>
         <button onclick="showEntry(14)">Week 14</button>
+        <button onclick="showEntry(15)">Week 15</button>
+        <button onclick="showEntry(16)">Week 16</button>
     </div>
     
 <div id="entry-1" class="entry">
@@ -269,21 +271,43 @@
 
     <div id="entry-15" class="entry">
         <p class="date">Week 15: 8-12 September, 2025</p>
-        <p>This week, I have been heavily stuck .</p>
-        <p> As I did in the last week, I worked on spawn and despawning the car in gazebo using ROS2.</p>
         <p>
-            Right now, the car spawns without problems in the world. It bridge between Gazebo and ROS2 and makes the logic I put on it via console. Up to this point there is no problem
-            at all, but when the turn of despawn comes, the car and the topics of the car do not dissapear, even if the console command return is correct.
+            This week, I worked closely with my colleague Javier to try to solve an unexpected problem I encountered while using BT Studio.
         </p>
         <p>
-            I spoke to some colleagues and we ended reaching the conclussion that this situation is exceptional and it is a bug, so I moved to the next step, wich is trying to make the car follow the line.
-            I did not have the time to start, so I hope to have some progress on this the next week.
+            The issue was that BT Studio simply refused to synchronize the GitHub pool with Visual Studio Code, preventing me from keeping my local work 
+            aligned with the remote repository. We went through different possible solutions, from revising credentials and permissions to reinstalling 
+            extensions and checking the workspace configuration.
         </p>
         <p>
-            To leave a photo here, I show you the buildings I added into Monaco so it looks a bit better.
+            After many hours of trial, error, and adjustments, all our efforts unfortunately proved to be in vain. The platform continued to block the 
+            synchronization process, and the problem remained unresolved.
         </p>
-        <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
+        <p>
+            I decided not to waste any more time and to redirect my focus toward the Autoparking exercise, an activity that I had 
+            been planning to address later. This exercise involves creating three different parking scenarios (angled parking, parallel parking, and perpendicular parking) 
+            to test autonomous vehicle behavior. For this, I began by carefully reviewing how the entire system was originally implemented in Gazebo Classic, taking notes 
+            and analyzing its structure so I can prepare an effective migration to Gazebo Harmonic.
+        </p>
+        <img src="assets/gzUbuntu.png" alt="Week 15 screenshot" class="screenshot">
     </div>
+
+
+    <div id="entry-16" class="entry">
+        <p class="date">Week 15: 15-19 September, 2025</p>
+        <p>This week, I created new maps for a migration of Autoparking exercise.</p>
+        <p>The Autoparking exercise has three different modes: angled parking, parallel parking, and perpendicular parking.</p>
+        <p>
+            Since I currently cannot test with the available development tools, I will start working directly on the database, using RoboticsAcademy as my 
+            primary test site.
+            To do that I cloned the repo and followed the user guide instalation of RA.
+        </p>
+        <p>
+            I actually had no time to test if that worked out to change the excercises, but next week I will see.
+        </p>
+        <img src="assets/gzUbuntu.png" alt="Week 15 screenshot" class="screenshot">
+    </div>
+
 
     <script>
         function showEntry(week) {
